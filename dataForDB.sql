@@ -1,3 +1,29 @@
+CREATE DATABASE "MyShop";
+
+CREATE TABLE "Suppliers" 
+(
+    "SupplierID"   SERIAL PRIMARY KEY,
+    "SupplierName" VARCHAR(255) NOT NULL,
+    "City" VARCHAR(255) NOT NULL,
+    "Country" VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE "Categories" 
+(
+    "CategoryID"   SERIAL PRIMARY KEY,
+    "CategoryName" VARCHAR(255) NOT NULL,
+    "Description" VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE "Products" 
+(
+    "ProductID"   SERIAL PRIMARY KEY,
+    "ProductName" VARCHAR(255) NOT NULL,
+    "Price" NUMERIC NOT NULL,
+    "SupplierID" INTEGER REFERENCES "Suppliers" ("SupplierID") ON DELETE NO ACTION ON UPDATE CASCADE,
+    "CategoryID" INTEGER REFERENCES "Categories" ("CategoryID") ON DELETE NO ACTION ON UPDATE CASCADE
+);
+
 INSERT INTO "Suppliers" ("SupplierName", "City", "Country") VALUES ('Exotic Liquid', 'London', 'UK') RETURNING *;
 INSERT INTO "Suppliers" ("SupplierName", "City", "Country") VALUES ('New Orleans Cajun Delights', 'New Orleans', 'USA') RETURNING *;
 INSERT INTO "Suppliers" ("SupplierName", "City", "Country") VALUES ('Grandma Kelly’s Homestead', 'Ann Arbor', 'USA') RETURNING *;

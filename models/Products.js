@@ -17,7 +17,7 @@ const Products = db.define(
 			allowNull: false,
 		},
 		Price: {
-			type: DataTypes.REAL,
+			type: DataTypes.NUMERIC,
 			allowNull: false,
 		},
 		SupplierID: {
