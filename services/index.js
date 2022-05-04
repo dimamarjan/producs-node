@@ -7,7 +7,7 @@ const {
 
 const { categoriesGet } = require('./categories');
 
-const { suppliersGet, suppliersGetQueryFour } = require('./suppliiers');
+const { suppliersGet } = require('./suppliiers');
 
 module.exports = {
 	productsAdd,
