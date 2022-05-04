@@ -3,10 +3,6 @@ const {
 	productsGet,
 	productsUpdate,
 	productsDelete,
-	productsGetQueryOne,
-	productsGetQueryTwo,
-	productsGetQueryThree,
-	productsGetQueryFour,
 } = require('./products');
 
 const { categoriesGet } = require('./categories');
@@ -18,10 +14,6 @@ module.exports = {
 	productsGet,
 	productsUpdate,
 	productsDelete,
-	productsGetQueryOne,
-	productsGetQueryTwo,
-	productsGetQueryThree,
-	productsGetQueryFour,
 
 	categoriesGet,
 

@@ -26,8 +26,4 @@ const Suppliers = db.define(
 	{ timestamps: false }
 );
 
-// (async () => {
-// 	await Suppliers.sync();
-// })();
-
 module.exports = Suppliers;

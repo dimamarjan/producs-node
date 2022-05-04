@@ -22,8 +22,4 @@ const Categories = db.define(
 	{ timestamps: false }
 );
 
-(async () => {
-	await Categories.sync();
-})();
-
 module.exports = Categories;
