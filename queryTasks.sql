@@ -31,7 +31,7 @@ VALUES
 ('Grandma Kelly’s Homestead', 'Ann Arbor', 'USA'),
 ('Tokyo Traders', 'Tokyo', 'Japan'),
 ('Cooperativa de Quesos ‘Las Cabras’', 'Oviedo', 'Spain'),
-('Norske Meierier’', 'Lviv', 'Ukraine');
+('Norske Meierier’', 'Lviv', 'Ukraine'); -- TASK6
 
 INSERT INTO "Categories" ("CategoryName", "Description") 
 VALUES 
@@ -39,7 +39,7 @@ VALUES
 ('Condiments', 'Sweet and savory sauces, relishes, spreads, and seasonings'),
 ('Confections', 'Desserts, candies, and sweet breads'),
 ('Dairy Products', 'Cheeses'),
-('Grains/Cereals', 'Breads, crackers, pasta, and cereal');
+('Grains/Cereals', 'Breads, crackers, pasta, and cereal'); 
 
 INSERT INTO "Products" ("ProductName","Price","SupplierID","CategoryID") 
 VALUES 
@@ -48,7 +48,7 @@ VALUES
 ('Aniseed Syrup', 10, 1, 2),
 ('Chef Anton''s Cajun', 22, 2, 2),
 ('Chef Anton''s Gumbo Mix', 21.35, 2, 2 ),
-('Green tea', 10, 6, 1);
+('Green tea', 10, 6, 1); -- TASK6
 
 -- TASK1
 SELECT * 
